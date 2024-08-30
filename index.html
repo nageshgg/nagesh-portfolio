@@ -15,6 +15,12 @@
 
         .navbar {
             margin-bottom: 40px;
+            background-color: "#6A5BC1";
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            color: rgba(16, 128, 105, 0.784);
         }
 
         .section-title {
@@ -50,6 +56,30 @@
         li {
             font-size: 20px;
         }
+
+        /* Scale and Bounce Animation */
+        @keyframes scaleAndBounce {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Applying the animation to the text */
+        .animated-text {
+            font-size: 3rem;
+            color: #2a5380;
+            animation: scaleAndBounce 3.5s ease-out;
+        }
     </style>
 </head>
 
@@ -78,16 +108,25 @@
     </nav>
 
     <!-- Header -->
-    <header class="bg-light text-center py-5">
-        <div class="container">
-            <div>
-                <img src="nagesh.jpeg" class="rounded mx-auto d-block" alt="Nagesh Gupta" width="300px" height="300px">
-            </div>
-            <div>
-                <h1>Nagesh Gupta</h1>
-                <p class="lead">Software Engineer | Oxford, UK</p>
-                <a href="https://www.linkedin.com/in/nageshgupta01" class="btn btn-primary" target="_blank">LinkedIn
-                    Profile</a>
+    <header class="bg-light  py-5">
+        <div class="container flex">
+            <div class="row">
+
+                <div class="col-sm-6 text-center mt-5">
+                    <img src="assets/nagesh.jpeg" class="img-thumbnail rounded mx-auto d-block " alt="Nagesh Gupta">
+                </div>
+                <div class="col-sm-6 text-center py-5">
+                    <div class="container text-center mt-5">
+                        <!-- Animated "Hi There" Text -->
+                        <h1 class="animated-text">Hi There!</h1>
+                    </div>
+                    <img src="https://i.gifer.com/origin/c7/c7bbf0cfeba0a0a70ccd52a36a736845_w200.webp" alt="">
+                    <h1 class="mt-5"> I am Nagesh Gupta</h1>
+                    <p class="lead">Postgrad Student (Oxford, UK) | Former Software Engineer @DXCTechnology and @Lentra
+                    </p>
+                    <a href="https://www.linkedin.com/in/nageshgupta01" class="btn btn-primary" target="_blank">LinkedIn
+                        Profile</a>
+                </div>
             </div>
         </div>
     </header>
@@ -177,11 +216,16 @@
                 data from registration to final recruitment, along with automatic mail generation. The tool was created
                 in Salesforce.</p>
         </div>
-        <div class="mb-4">
-            <h4>Event Management Tool</h4>
-            <p>Created a full-stack application using NextJs and JavaScript. It is an event management tool where the
-                organizer can create events and add attendees. The tool can automatically generate emails to all the
-                attendees for the event.</p>
+        <div class="card">
+            <img src="assets/EventManagement.png" class="card-img-top" alt="Event-Management-System Image">
+            <div class="card-body text-center">
+                <h2 class="card-title">Event Management System</h2>
+                <p class="card-text">Created a full-stack application using NextJs and JavaScript. It is an event
+                    management tool where the
+                    organizer can create events and add attendees.</p>
+                <p><b>Technology Used:</b> <i>JavaScript, Node JS, PostGre SQL, HTML, Taillwind CSS, RESTful API</i></p>
+                <a href="https://github.com/nageshgg/Event-Management-System-" class="btn btn-primary">Github</a>
+            </div>
         </div>
     </section>
 
@@ -212,6 +256,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
