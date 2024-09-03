@@ -80,6 +80,10 @@
             color: #2a5380;
             animation: scaleAndBounce 3.5s ease-out;
         }
+
+        #image {
+            border-radius: 20%;
+        }
     </style>
 </head>
 
@@ -95,7 +99,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -113,7 +117,7 @@
             <div class="row">
 
                 <div class="col-sm-6 text-center mt-5">
-                    <img src="assets/nagesh.jpeg" class="img-thumbnail rounded mx-auto d-block " alt="Nagesh Gupta">
+                    <img id="image" src="assets/nagesh.jpeg" class="img-thumbnail  mx-auto d-block " alt="Nagesh Gupta">
                 </div>
                 <div class="col-sm-6 text-center py-5">
                     <div class="container text-center mt-5">
@@ -121,27 +125,27 @@
                         <h1 class="animated-text">Hi There!</h1>
                     </div>
                     <img src="https://i.gifer.com/origin/c7/c7bbf0cfeba0a0a70ccd52a36a736845_w200.webp" alt="">
-                    <h1 class="mt-5"> I am Nagesh Gupta</h1>
-                    <p class="lead">Postgrad Student (Oxford, UK) | Former Software Engineer @DXCTechnology and @Lentra
-                    </p>
-                    <a href="https://www.linkedin.com/in/nageshgupta01" class="btn btn-primary" target="_blank">LinkedIn
-                        Profile</a>
+                    <h1 class="mt-2"> I am Nagesh Gupta</h1>
+                    <p class="lead">Postgrad Student (Oxford, UK) | Former Software Engineer </p>
+                    <p>Motivated and result-oriented Software Engineer with over 3.5+ years of IT
+                        experience. Currently, I'm pursuing a master's degree from Oxford Brookes University</p>
+                    <a href="https://www.linkedin.com/in/nageshgupta01" target="_blank">LinkedIn
+                        Profile</a> |
+                    <a href="https://github.com/nageshgg" target="_blank">Github</a>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="resume-section container">
+    <!-- <section id="about" class="resume-section container">
         <h2 class="section-title">Summary</h2>
-        <p>Motivated and result-oriented Software Engineer with over 3.5+ years of IT experience. Passionate about
-            solving
-            problems with technology like Java, Python, JavaScript, and Machine Learning. Seeking a full-time job as a
-            Full Stack Developer or Backend Developer.</p>
-    </section>
+        <p>Hi, I'm Nagesh Gupta,Motivated and result-oriented Software Engineer with over 3.5+ years of IT experience.
+            Currentlly persuig masters From Oxfrod Brookes University.</p>
+    </section> -->
 
     <!-- Skills Section -->
-    <section id="skills" class="resume-section container">
+    <!-- <section id="skills" class="resume-section container">
         <h2 class="section-title">Skills</h2>
         <div class="mb-4">
             <h4>Technical Skills</h4>
@@ -155,7 +159,86 @@
             <h4>More Tools/Skills</h4>
             <p>Azure, GCP, GIT, Angular Material, Tailwind CSS, VsCode, Docker, Kubernetes, CI/CD</p>
         </div>
-    </section>
+    </section> -->
+
+    <div id="skills" class="resume-section container my-5">
+        <h2 class="section-title">Skills</h2>
+        <div class="row">
+            <!-- Programming Languages -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-code me-2 text-primary"></i>Programming Languages</h5>
+                        <p class="card-text">Proficient in the following programming languages:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Machine Learning</li>
+                            <li class="list-group-item">Python</li>
+                            <li class="list-group-item">JavaScript</li>
+                            <li class="list-group-item">Java</li>
+                            <li class="list-group-item">C++</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks and Libraries -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-layer-group me-2 text-success"></i>Frameworks &
+                            Libraries
+                        </h5>
+                        <p class="card-text">Experienced with various frameworks and libraries:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">React.js</li>
+                            <li class="list-group-item">Node.js</li>
+                            <li class="list-group-item">RestAPI, GraphQL</li>
+                            <li class="list-group-item">Pandas</li>
+                            <li class="list-group-item">Numpy</li>
+                            <li class="list-group-item">Bootstrap</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools and Technologies -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-tools me-2 text-warning"></i>Tools & Technologies</h5>
+                        <p class="card-text">Skilled in using the following tools and technologies:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Git & GitHub</li>
+                            <li class="list-group-item">Docker</li>
+                            <li class="list-group-item">AWS</li>
+                            <li class="list-group-item">Jenkins</li>
+                            <li class="list-group-item">Agile Methodologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-user-friends me-2 text-danger"></i>Soft Skills</h5>
+                        <p class="card-text">Strong interpersonal and professional skills:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Problem Solving</li>
+                            <li class="list-group-item">Team Collaboration</li>
+                            <li class="list-group-item">Effective Communication</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- Experience Section -->
     <section id="experience" class="resume-section container">
@@ -208,23 +291,38 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="resume-section container">
-        <h2 class="section-title">Projects</h2>
-        <div class="mb-4">
-            <h4>Recruitment Application</h4>
-            <p>Developed a cloud-based tool for recruiters, automating the recruitment process by tracking applicant
-                data from registration to final recruitment, along with automatic mail generation. The tool was created
-                in Salesforce.</p>
+    <section id="projects" class="resume-section container py-5">
+        <h2 class="section-title text-center mb-5">Projects</h2>
+
+        <!-- Project 1: Recruitment Application -->
+        <div class="row mb-5">
+            <div class="col-lg-12">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h4 class="card-title">Recruitment Application</h4>
+                        <p class="card-text">Developed a cloud-based tool for recruiters, automating the recruitment
+                            process by tracking applicant data from registration to final recruitment, along with
+                            automatic mail generation. The tool was created in Salesforce.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <img src="assets/EventManagement.png" class="card-img-top" alt="Event-Management-System Image">
-            <div class="card-body text-center">
-                <h2 class="card-title">Event Management System</h2>
-                <p class="card-text">Created a full-stack application using NextJs and JavaScript. It is an event
-                    management tool where the
-                    organizer can create events and add attendees.</p>
-                <p><b>Technology Used:</b> <i>JavaScript, Node JS, PostGre SQL, HTML, Taillwind CSS, RESTful API</i></p>
-                <a href="https://github.com/nageshgg/Event-Management-System-" class="btn btn-primary">Github</a>
+
+        <!-- Project 2: Event Management System -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card shadow-sm border-0">
+                    <img src="assets/EventManagement.png" class="card-img-top" alt="Event-Management-System Image">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Event Management System</h4>
+                        <p class="card-text">Created a full-stack application using NextJs and JavaScript. It is an
+                            event management tool where the organizer can create events and add attendees.</p>
+                        <p><b>Technology Used:</b> <i>JavaScript, Node JS, PostGre SQL, HTML, Tailwind CSS, RESTful
+                                API</i></p>
+                        <a href="https://github.com/nageshgg/Event-Management-System-" class="btn btn-primary"
+                            target="_blank">View on GitHub</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
